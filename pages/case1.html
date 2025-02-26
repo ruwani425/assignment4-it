@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>case-1</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .menu-button {
+        width: 300px;
+        height: 50px;
+        background-color: blueviolet;
+        color: white;
+        font-weight: bold;
+        font-family: sans-serif;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        margin-left: -250px;
+        transition: margin-left 1s ease;
+      }
+
+      .buttons {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        justify-content: center;
+      }
+
+      .menu-button img {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+      }
+      .menu-button:hover {
+        margin-left: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="buttons">
+        <div class="menu-button">
+          Menu One
+          <img src="/icons/contact.png" alt="" />
+        </div>
+        <div class="menu-button">
+          Menu Two
+          <img src="/icons/ambulance.png" alt="" />
+        </div>
+        <div class="menu-button">
+          Menu Three
+          <img src="/icons/image.png" alt="" />
+        </div>
+        <div class="menu-button">
+          Menu Four
+          <img src="/icons/layers.png" alt="layers" />
+        </div>
+        <div class="menu-button">
+          Menu Five
+          <img src="/icons/cart.png" alt="cart" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
