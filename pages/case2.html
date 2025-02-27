@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>case-2</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      body {
+        margin: 0;
+        background: linear-gradient(to right, #1a73e8, #4a90e2);
+      }
+      .circle {
+        width: 200px;
+        height: 200px;
+        background-color: grey;
+        border-radius: 100%;
+        border: 10px solid white;
+        border-top: 10px solid red;
+      }
+
+      h1 {
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        color: white;
+      }
+
+      .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .circle:hover h1 {
+        transform: rotate(-360deg);
+        transition: 3s all;
+      }
+
+      .circle:hover {
+        transform: rotate(360deg);
+        transition-duration: 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="circle-container">
+        <div class="circle">
+          <h1>RWAD</h1>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
