@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, #1a73e8, #4a90e2);
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 100%;
+    border: 10px solid white;
+    border-top: 10px solid red;
+  }
+
+  h1 {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+  } 
+
+  .circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .circle:hover h1 {
+    transform: rotate(-360deg);
+    transition: 3s all;
+  }
+
+  .circle:hover {
+    transform: rotate(360deg);
+    transition-duration: 3s;
+  }

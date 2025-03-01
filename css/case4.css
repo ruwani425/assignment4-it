@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.water-drop{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid brown;
+    animation: waterDrop 2s infinite ease-in-out;
+}
+@keyframes waterDrop {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(4);
+        opacity: 0;
+    }
+}

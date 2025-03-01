@@ -4,53 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      body {
-        margin: 0;
-        overflow: hidden;
-      }
-      .box {
-        position: absolute;
-        width: 200px;
-        height: 100px;
-        background-color: red;
-        animation: go-around 5s alternate infinite 0s;
-        border-radius: 10%;
-      }
-
-      @keyframes go-around {
-        0% {
-          top: 0;
-          left: 0;
-          transform: rotate(360deg);
-          background-color: rgb(255, 136, 0);
-        }
-        25% {
-          top: 0;
-          left: calc(100% - 200px);
-          transform: rotate(180deg);
-          background-color: rgb(238, 223, 21);
-        }
-        50% {
-          top: calc(100% - 150px);
-          left: calc(100% - 200px);
-          transform: rotate(360deg);
-          background-color: red;
-        }
-        75% {
-          top: calc(100% - 150px);
-          left: 0;
-          transform: rotate(180deg);
-          background-color: rgb(253, 76, 244);
-        }
-        100% {
-          top: 0;
-          left: 0;
-          transform: rotate(-180deg);
-          background-color: orange;
-        }
-      }
-    </style>
+   <link rel="stylesheet" href="/css/case3.css">
   </head>
   <body>
     <section class="container">
